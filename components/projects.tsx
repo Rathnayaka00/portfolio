@@ -124,6 +124,8 @@ export function Projects() {
                         <MagneticButton strength={0.5}>
                           <a
                             href={project.links.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
                             className="p-2 rounded-lg text-muted-foreground hover:text-primary transition-colors"
                             aria-label="View code"
                           >
@@ -135,6 +137,8 @@ export function Projects() {
                         <MagneticButton strength={0.5}>
                           <a
                             href={project.links.external}
+                          target="_blank"
+                          rel="noopener noreferrer"
                             className="p-2 rounded-lg text-muted-foreground hover:text-primary transition-colors"
                             aria-label="View live demo"
                           >
