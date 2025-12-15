@@ -4,6 +4,7 @@ import { ArrowRight, Github, Linkedin, Mail, Download, Sparkles } from "lucide-r
 import { MagneticButton } from "./magnetic-button"
 import { ScrollReveal } from "./scroll-reveal"
 import Image from "next/image"
+import profileImg from "../src/profile.png"
 
 export function Hero() {
   return (
@@ -75,7 +76,9 @@ export function Hero() {
                 </MagneticButton>
                 <MagneticButton strength={0.2}>
                   <a
-                    href="#contact"
+                    href="https://drive.google.com/file/d/1tiM-0DB-HZCebcNU0R3ndYnFD8FfZNfS/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 rounded-xl font-semibold hover:-translate-y-1"
                   >
                     <Download size={18} />
@@ -140,13 +143,7 @@ export function Hero() {
                 {/* Image container */}
                 <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-background shadow-2xl shadow-primary/20">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-violet-500/10 z-10" />
-                  <Image
-                    src="/professional-portrait-of-a-young-woman-software-en.jpg"
-                    alt="Malinda Rathnayaka - AI/ML Engineer"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
+                  <Image src={profileImg} alt="Malinda Rathnayaka - AI/ML Engineer" fill className="object-cover" priority />
                 </div>
               </div>
             </ScrollReveal>
