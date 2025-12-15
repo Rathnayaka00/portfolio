@@ -32,7 +32,6 @@ Thumbs.db
 !.vscode/settings.json
 
 # lockfiles (keep the one you use)
-package-lock.json
 pnpm-lock.yaml
 yarn.lock
 
